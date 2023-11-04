@@ -18,7 +18,7 @@
   html,
   body {
     overflow-x: hidden;
-    font-size: 18px;
+
   }
   
   body {
@@ -45,6 +45,7 @@
   textarea,
   select {
     font: inherit;
+    outline: none;
   }
   /*
     8. Avoid text overflows
@@ -58,6 +59,7 @@
   h6 {
     overflow-wrap: break-word;
     margin: 0;
+
   }
   .flex {
     display: flex;
@@ -65,18 +67,13 @@
   .grid{
     display: grid;
   }
-  .border-radius{
-    border-radius: .5rem;
-  }
   .relative{
     position: relative;
   }
   .absolute{
     position: absolute;
   }
-  .center {
-    text-align: center;
-  }
+
   .red {
     border: 1px solid red;
   }
@@ -84,11 +81,17 @@
  .pointer{
   cursor: pointer;
  }
+ .center{
+  text-align: center;
+ }
 
 ul{
   list-style: none;
 }
 a{
   text-decoration: none;
+}
+.capitalize{
+  text-transform: capitalize;
 }
   

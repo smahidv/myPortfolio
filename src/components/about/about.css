@@ -1,0 +1,118 @@
+.about-container {
+    margin-top: 70px;
+    width: 100%;
+
+    
+
+}
+
+.about-container_description p{
+    color: var(--color-text) !important;
+    line-height: 2em !important;
+}
+.about-container_skills{
+    width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -4%;
+    z-index: 22;
+
+}
+.skills-list-title{
+    color: white;
+    grid-column: span 2;
+    text-align: center;
+    font-size: 1.5rem;
+    letter-spacing: 5px;
+    font-family: var(--font-body);
+    padding-bottom: .5em;
+}
+
+.skills-list{
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    padding-block: 30px;
+    padding-inline: 5vw;
+    background-image: url("../../images/jose-duarte-ma48HHDJCXw-unsplash.jpg");
+    background-size: cover;
+
+}
+.skill{
+    box-shadow: var(--box-shadow-grey);
+   background-color: white;
+    padding:6px;
+    text-align: center;
+    color: black;
+    border-bottom: 3px solid var(--color-secondary);
+    cursor: context-menu;
+    font-size:clamp(15px,2vw,1.01rem);
+}
+.about-container_description{
+    width: 100%;
+    padding-inline: 30px;
+    background-color: var(--very-dark-grey);
+    padding-top: 380px;
+    padding-bottom: 100px;
+
+}
+.about-container_description::after{
+    content: "";
+    position: absolute;
+    width: 60%;
+    height: 3px;
+    display: block;
+    transform: rotate(90deg);
+    background-color: var(--color-secondary);
+    left: -29.5%;
+    bottom: 49%;
+}
+
+
+.about-container_description p:last-child{
+  margin-bottom: 30px;
+}
+.about-container_description .centered-heading{
+    
+    margin-top: 100px !important;
+    margin-bottom: 30px !important;
+  }
+
+@media(min-width:1000px){
+    .about-container{
+        grid-template-columns: 1fr 1fr;
+        align-items: start;
+        justify-content: center;
+        margin-top: unset;
+        margin-bottom: 320px;
+    }
+    
+    .about-container_skills{
+        all: unset;
+        right: 0;
+        width: 50%;
+        z-index: 22;
+        height: 100%;
+        top: 16%;
+        
+       
+    }
+    .skills-list{
+        height: fit-content;
+        padding-block: 130px;
+        
+    }
+    .about-container_description p:first-child,
+    .about-container_description p:last-child
+    {
+        all: unset;
+    }
+    .about-container_description{ 
+        padding:88px 10% ;
+      top: 0;
+    }
+
+ 
+
+}

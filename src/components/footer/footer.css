@@ -1,0 +1,45 @@
+footer.footer{
+    padding-top: 3em;
+    padding-bottom: 1em;
+   
+}
+footer.footer::before{
+    content: "";
+    position: absolute;
+    height: .5px;
+    width: 100%;
+    background-color:var(--color-text) ;
+    top: 35px;
+
+}
+
+
+
+footer.footer p.text-footer{
+    color: rgb(225, 223, 223) !important;
+    font-family: cursive !important;
+    font-weight: lighter;
+}
+footer a.git-footer,
+footer img.png{
+    margin: 10px;
+    
+}
+footer  img.png{
+    width: 20px;
+    height: 20px;
+    display: inline;
+
+}
+footer  img.netify-png{
+    width: 60px !important;
+ 
+
+}
+@media(min-width:600px){
+footer .center > p
+
+{
+    display: inline !important;
+}
+}

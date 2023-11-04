@@ -1,0 +1,56 @@
+.swiper-costomized {
+  width: 100%; /* Adjust to your preference */
+  height: 60vh; 
+  max-width: 900px; 
+  min-height: 300px;/* Adjust to your preference */
+
+}
+.swiper-costomized .image-container {
+    width: 100%;
+    height: 100%;
+  
+  }
+  
+  .swiper-costomized .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.82); 
+  }
+  
+  .swiper-costomized img {
+    width: 100%;
+    height: auto;
+    border-radius: .3rem;
+    object-position:bottom;
+  }
+
+  .project-icons{
+position: absolute;
+justify-content: center;
+align-items: center;
+transform: translate(-50%,50%);
+left: 50%;
+top: 50%;
+z-index: 66;
+gap: 2em;
+
+
+  }
+  .project-icons a{
+   font-size: 30px !important;
+  }
+ .swiper-costomized .description-project{
+color: white !important;
+font-size:clamp(1rem,5vw,1.6rem) ;
+z-index: 66;
+top: 10%;
+width: 80%;
+left: 50%;
+transform: translateX(-50%);
+text-align: center;
+  }
+  
+  

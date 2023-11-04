@@ -3,12 +3,24 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@fortawesome/free-brands-svg-icons": "^6.4.2",
+    "@fortawesome/free-solid-svg-icons": "^6.4.2",
+    "@fortawesome/react-fontawesome": "^0.2.0",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "babel-plugin-react-css-modules": "^5.2.6",
+    "framer-motion": "^10.16.4",
+    "lottie-colorify": "^0.8.0",
+    "lottie-react": "^2.4.0",
+    "lottie-web": "^5.12.2",
     "react": "^18.2.0",
+    "react-bodymovin": "^2.0.0",
     "react-dom": "^18.2.0",
+    "react-router-dom": "^6.17.0",
+    "react-router-hash-link": "^2.4.3",
     "react-scripts": "5.0.1",
+    "swiper": "^11.0.3",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -34,5 +46,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-decorators": "^7.23.2",
+    "tailwindcss": "^3.3.5"
   }
 }

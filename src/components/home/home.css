@@ -1,0 +1,76 @@
+section.home{
+    margin-top: 8em;
+}
+.quote h1 {
+font: normal bold 3rem / 1 '';
+background-image: url("../../images/textGalaxy.png");
+-webkit-background-clip: text;
+background-clip: text;
+-webkit-text-fill-color: transparent;
+background-size: 400%;
+background-position: -400%;
+
+animation: animatedText 6.5s infinite alternate-reverse;
+}
+p.home-description{
+  color: var(--color-text) !important;
+  max-width: 50ch;
+} 
+@keyframes animatedText{
+from{
+  background-position: 0%;
+}
+to{
+  background-position: 100%;
+}
+
+}
+
+.home-annimation{
+    width: 50%;
+}
+.home-annimation{
+  display: none;
+}
+
+@media(min-width:950px){
+  .home .quote{
+    align-self: end;
+    
+  }
+  .home .quote h1{
+
+    font-size: 4.1rem !important;
+  }
+
+    section.home{
+        margin-bottom: 8em;
+       grid-template-columns:55% 45%;
+    } 
+    .home-annimation{
+      display: block;
+      align-self: start;
+      justify-self:start;
+     
+  
+
+    }
+
+    .home-annimation .lottie-costomize{
+      width: 670px;
+      height: 300px;
+     
+
+    }
+
+    @media only screen and (max-width: 1140px) and (min-width: 700px){
+      .home-annimation{
+        display: block;
+      }
+      section.home{
+
+       grid-template-columns:40% 60%;
+    } 
+  
+    }
+}
