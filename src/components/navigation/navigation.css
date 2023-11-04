@@ -103,16 +103,21 @@
   }
   
  /* ///////////////////nav-icon end//////////////////// */
+ header img.logo{
+  width: 55px;
+  height: 55px;
+  /* margin-left: 10%; */
+ }
  .nav-container{
     grid-template-columns: repeat(2,1fr);
     justify-content: space-between;
     align-items: center;
-    padding:1.5em;
     box-shadow: var(--box-shadow-grey);
     position: fixed;
     width: 100%;
     z-index: 66;
     background-color: black;
+    padding-inline: 5%;
  }
  .nav-options{
     height: 100vh;
@@ -133,6 +138,7 @@
 ul.nav-options-list li:not(:first-child) {
   margin-top:40px;
  }
+ 
 
  @media(min-width:700px){
   ul.nav-options-list li:not(:first-child) {

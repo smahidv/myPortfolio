@@ -71,6 +71,8 @@
 }
 
 
+
+
 .about-container_description p:last-child{
   margin-bottom: 30px;
 }
@@ -86,7 +88,7 @@
         align-items: start;
         justify-content: center;
         margin-top: unset;
-        margin-bottom: 320px;
+        margin-bottom: 250px;
     }
     
     .about-container_skills{

@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { HashLink as Link } from "react-router-hash-link";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCode } from "@fortawesome/free-solid-svg-icons";
+import logo from '../../images/1a.png';
 
 import "./navigation.css";
 
@@ -31,7 +30,7 @@ const Navigation = () => {
     <header>
       <nav className="nav-container grid ">
         <Link to="#home">
-          <FontAwesomeIcon icon={faCode} style={{ color: "#000000" }} />
+          <img className="logo" src={logo} alt="logo" />
         </Link>
         <div
           className="humburger-menu"

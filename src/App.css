@@ -36,6 +36,7 @@ p.home-description
 }
 .centered-heading{
     cursor: context-menu;
+    text-align: center;
 
 }
 .centered-heading > span{
@@ -75,6 +76,9 @@ span.period{
     .quote{
         text-align: start !important;
 
+    }
+    .centered-heading{
+        text-align: start;
     }
 
 }
