@@ -1,10 +1,12 @@
-import React from "react";
+
 import "./about.css";
 
 const About = () => {
+  
+
   return (
-    <section className="about" id="about">
-      <h2 className="centered-heading margin-block">
+    <section className="about"   id="about">
+      <h2  className="centered-heading margin-block">
         <span>A</span>
         <span>b</span>
         <span>o</span>
@@ -16,7 +18,11 @@ const About = () => {
         <span className="period">.</span>
       </h2>
       <div className="about-container relative grid">
-        <div className="about-container_skills grid   absolute">
+        <div 
+         className="about-container_skills  grid   absolute"
+ 
+   
+         >
           <div className="skills-list grid">
             <div className="skills-list-title">My Skills</div>
             <div className="skill">HTML5 & CSS3</div>

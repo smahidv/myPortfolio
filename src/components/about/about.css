@@ -49,11 +49,12 @@
     cursor: context-menu;
     font-size:clamp(15px,2vw,1.01rem);
 }
+
 .about-container_description{
     width: 100%;
     padding-inline: 30px;
     background-color: var(--very-dark-grey);
-    padding-top: 380px;
+    padding-top: 440px;
     padding-bottom: 100px;
 
 }
@@ -109,7 +110,7 @@
         all: unset;
     }
     .about-container_description{ 
-        padding:88px 10% ;
+        padding:150px 10% ;
       top: 0;
     }
 
