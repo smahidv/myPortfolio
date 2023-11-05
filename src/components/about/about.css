@@ -9,6 +9,7 @@
 .about-container_description p{
     color: var(--color-text) !important;
     line-height: 2em !important;
+    text-align: center;
 }
 .about-container_skills{
     width: 90%;

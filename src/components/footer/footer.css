@@ -3,6 +3,9 @@ footer.footer{
     padding-bottom: 1em;
    
 }
+footer .sub_footer{
+    line-height: 2em;
+}
 footer.footer::before{
     content: "";
     position: absolute;

@@ -7,7 +7,7 @@ import "./footer.css";
 const Footer = () => {
   return (
     <footer className="footer relative">
-      <div className="center">
+      <div className="center sub_footer">
         <p className="text-footer">© Oumaima smahi - 2023. Built with</p>
         <img className="react-png png" src={reactPng} alt="react logo" />
         <p className="text-footer">open sourced on</p>
