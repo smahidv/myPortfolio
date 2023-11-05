@@ -76,8 +76,8 @@ const Slider = () => {
             <div className="overlay"></div>
             <img src={slide.imageSrc} alt={slide.altText} />
             <div className="project-icons flex">
-              <a href={slide.projectLinks.live}><FontAwesomeIcon icon={faArrowUpRightFromSquare} style={{color: "#ffffff"}} /></a>
-              <a href={slide.projectLinks.github}><FontAwesomeIcon icon={faGithub} style={{color: "#ffffff"}} /></a>
+              <a href={slide.projectLinks.live} target="_blank" ><FontAwesomeIcon icon={faArrowUpRightFromSquare} style={{color: "#ffffff"}} /></a>
+              <a href={slide.projectLinks.github} target="_blank" ><FontAwesomeIcon icon={faGithub} style={{color: "#ffffff"}} /></a>
             </div>
            
           </div>
