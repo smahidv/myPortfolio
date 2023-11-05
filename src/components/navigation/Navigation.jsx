@@ -17,6 +17,8 @@ const Navigation = () => {
     setIsOpen(false);
     document.body.style.overflowY = "visible";
     document.body.style.height = "auto";
+    const navIcon = document.getElementById("nav-icon");
+    navIcon.classList.remove("open");
   }
 
   useEffect(() => {
