@@ -16,7 +16,7 @@ const About = () => {
   }, [controls, inView]);
   const leftVariants = {
     visible: { x: 0,transition: { duration: 1, bounce: 1 } },
-    hidden: { x: "-600px" },
+    hidden: { x: "-70px" },
   };
   const upVariants = {
     visible: { y: 0,opacity:1 ,transition: { duration: 1, delay:0.2,bounce: 1 } },

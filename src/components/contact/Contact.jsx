@@ -15,7 +15,7 @@ const Contact = () => {
     }
   }, [controls, inView]);
   const opacityVariants = {
-    visible: { opacity: 1, transition: { duration: 1, delay: 0.2, bounce: 1 } },
+    visible: { opacity: 1, transition: { duration: 1.5, delay: 0.2, bounce: 1 } },
     hidden: { opacity: 0 },
   };
   return (
