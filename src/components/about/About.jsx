@@ -1,12 +1,36 @@
-
+import React, { useEffect } from "react";
+import { useAnimation, motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 import "./about.css";
 
 const About = () => {
-  
+  const controls = useAnimation();
+  const [ref, inView] = useInView();
+  useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    }
+    if (!inView) {
+      controls.start("hidden");
+    }
+  }, [controls, inView]);
+  const leftVariants = {
+    visible: { x: 0,transition: { duration: 1, bounce: 1 } },
+    hidden: { x: "-600px" },
+  };
+  const upVariants = {
+    visible: { y: 0,opacity:1 ,transition: { duration: 1, delay:0.2,bounce: 1 } },
+    hidden: { y: "-100px",opacity:0 },
+  };
+  const delayUpVariants = {
+    visible: { y: 0,opacity:1 ,transition: { duration: 1, delay:0.4,bounce: 1 } },
+    hidden: { y: "-100px",opacity:0 },
+  };
+
 
   return (
-    <section className="about"   id="about">
-      <h2  className="centered-heading margin-block">
+    <section className="about" id="about">
+      <h2 className="centered-heading margin-block">
         <span>A</span>
         <span>b</span>
         <span>o</span>
@@ -18,26 +42,108 @@ const About = () => {
         <span className="period">.</span>
       </h2>
       <div className="about-container relative grid">
-        <div 
-         className="about-container_skills  grid   absolute"
- 
-   
-         >
+        <div className="about-container_skills  grid   absolute">
           <div className="skills-list grid">
             <div className="skills-list-title">My Skills</div>
-            <div className="skill">HTML5 & CSS3</div>
-            <div className="skill">JavaScript / ES6</div>
-            <div className="skill">React.js</div>
-            <div className="skill">Spring Boot</div>
-            <div className="skill">PHP</div>
-            <div className="skill">Express.js</div>
-            <div className="skill">Tailwind</div>
-            <div className="skill">MongoDB</div>
-            <div className="skill">MySQL</div>
-            <div className="skill">MongoDB</div>
+            <motion.div
+              ref={ref}
+              animate={controls}
+              initial="hidden"
+              variants={upVariants}
+              className="skill"
+            >
+              HTML5 & CSS3
+            </motion.div>
+            <motion.div
+              ref={ref}
+              animate={controls}
+              initial="hidden"
+              variants={delayUpVariants}
+              className="skill"
+            >
+              JavaScript / ES6
+            </motion.div>
+            <motion.div
+              ref={ref}
+              animate={controls}
+              initial="hidden"
+              variants={upVariants}
+              className="skill"
+            >
+              React.js
+            </motion.div>
+            <motion.div
+              ref={ref}
+              animate={controls}
+              initial="hidden"
+              variants={delayUpVariants}
+              className="skill"
+            >
+              Spring Boot
+            </motion.div>
+            <motion.div
+              ref={ref}
+              animate={controls}
+              initial="hidden"
+              variants={upVariants}
+              className="skill"
+            >
+              PHP
+            </motion.div>
+            <motion.div
+              ref={ref}
+              animate={controls}
+              initial="hidden"
+              variants={delayUpVariants}
+              className="skill"
+            >
+              Express.js
+            </motion.div>
+            <motion.div
+              ref={ref}
+              animate={controls}
+              initial="hidden"
+              variants={upVariants}
+              className="skill"
+            >
+              Tailwind
+            </motion.div>
+            <motion.div
+              ref={ref}
+              animate={controls}
+              initial="hidden"
+              variants={delayUpVariants}
+              className="skill"
+            >
+              MongoDB
+            </motion.div>
+            <motion.div
+              ref={ref}
+              animate={controls}
+              initial="hidden"
+              variants={upVariants}
+              className="skill"
+            >
+              MySQL
+            </motion.div>
+            <motion.div
+              ref={ref}
+              animate={controls}
+              initial="hidden"
+              variants={delayUpVariants}
+              className="skill"
+            >
+              MongoDB
+            </motion.div>
           </div>
         </div>
-        <div className="about-container_description  relative ">
+        <motion.div
+          ref={ref}
+          animate={controls}
+          initial="hidden"
+          variants={leftVariants}
+          className="about-container_description  relative "
+        >
           <p>
             I'm a fifth-year student studying software engineering at a Moroccan
             school of engineering sciences. I've discovered a deep passion for
@@ -51,7 +157,7 @@ const About = () => {
             That's why, when it comes to design, I instinctively lean towards a
             clean and uncomplicated website layout.
           </p>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
